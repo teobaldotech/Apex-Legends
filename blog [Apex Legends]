@@ -50,6 +50,133 @@
 <p><strong>Autor:</strong> Teobaldo | <strong>Atualizado:</strong> Agosto 2025</p>
 
 <div class="section">
+  <h2>📰 Atualizações de Agosto 2025</h2>
+  <ul>
+    <li>🔧 <strong>Balanceamento:</strong> RE-45 Elite nerfada com menos balas e mais recuo. Treine com ela! (+300 XP)</li>
+    <li>🛡️ <strong>Colheitadeiras Evo:</strong> Mais frequentes no mapa, facilitando evolução de escudo. Explore novas rotas! (+250 XP)</li>
+    <li>🧪 <strong>Ajustes de Lendas:</strong> Caustic, Bangalore e Bocek receberam correções importantes. Teste novas estratégias! (+200 XP)</li>
+    <li>🎮 <strong>Bastidores:</strong> JJ Williams, designer de Apex, agora está na equipe de Halo. Mudanças criativas à vista!</li>
+  </ul>
+  <p><em>Dica:</em> Complete os desafios relacionados às mudanças e ganhe XP extra no seu plano de treino!</p>
+</div>
+
+<div class="section">
+  <h2>🎯 Objetivo</h2>
+  <p>Melhorar com todas as lendas, evoluir mira, movimentação, habilidades e subir de nível nas ranqueadas do PS4.</p>
+</div>
+
+<div class="section">
+  <h2>📅 Cronograma Semanal</h2>
+  <table>
+    <tr><th>Dia</th><th>Treino</th><th>Ícone</th><th>XP</th></tr>
+    <tr><td>Segunda</td><td>Mira e movimentação</td><td>🎯</td><td>+300 XP</td></tr>
+    <tr><td>Terça</td><td>Habilidades táticas + ultimate</td><td>🛡️</td><td>+250 XP</td></tr>
+    <tr><td>Quarta</td><td>Jogo em equipe</td><td>🗣️</td><td>+300 XP</td></tr>
+    <tr><td>Quinta</td><td>Análise de gameplay</td><td>📺</td><td>+200 XP</td></tr>
+    <tr><td>Sexta</td><td>Combates decisivos</td><td>⚔️</td><td>+350 XP</td></tr>
+    <tr><td>Sábado</td><td>Rotação e mapa</td><td>🗺️</td><td>+300 XP</td></tr>
+    <tr><td>Domingo</td><td>Diversão e testes</td><td>🎉</td><td>+150 XP</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>🧠 Metas Semanais</h2>
+  <ul>
+    <li>✅ 3 eliminações com cada lenda ofensiva (+300 XP)</li>
+    <li>✅ 5 usos estratégicos de ultimate (+250 XP)</li>
+    <li>✅ 2 revives com lendas de suporte (+200 XP)</li>
+    <li>✅ Top 5 com lendas defensivas em 3 partidas (+350 XP)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>🧩 Desafios Extras</h2>
+  <ul>
+    <li>🛡️ Vencer sem escudo roxo (+500 XP)</li>
+    <li>🕶️ Sobreviver até o top 5 sem eliminar ninguém (+400 XP)</li>
+    <li>🔫 Usar apenas armas de energia (+300 XP)</li>
+    <li>🤐 Jogar sem pings ou comunicação (+350 XP)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>🤝 Treino com Amigos</h2>
+  <ul>
+    <li>👥 Jogar com lendas complementares (+150 XP)</li>
+    <li>🎧 Comunicação por voz com chamadas táticas (+200 XP)</li>
+    <li>🔄 Revezar funções (ataque/suporte) (+100 XP)</li>
+    <li>📹 Análise de gameplay em grupo (+250 XP)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>🧙 Sistema de Nível</h2>
+  <table>
+    <tr><th>Nível</th><th>Faixa de XP</th><th>Título</th></tr>
+    <tr><td>1</td><td>0–999 XP</td><td>Iniciante Estratégico</td></tr>
+    <tr><td>2</td><td>1000–1999 XP</td><td>Lenda em Ascensão</td></tr>
+    <tr><td>3</td><td>2000–2999 XP</td><td>Mestre Tático</td></tr>
+    <tr><td>4</td><td>3000+ XP</td><td>Apex Supremo</td></tr>
+  </table>
+</div>
+
+<footer>
+  <p>Boa sorte, lenda. Nos vemos no topo da arena. 🔥🎮</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plano de Treino Apex Legends - Blog RPG</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #ff4500;
+    }
+    .section {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #ff4500aa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c2c2c;
+      color: #ff4500;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🏹 Evolua em Apex Legends: Plano de Treino Semanal Estilo RPG</h1>
+<p><strong>Autor:</strong> Teobaldo | <strong>Atualizado:</strong> Agosto 2025</p>
+
+<div class="section">
   <h2>🎯 Objetivo</h2>
   <p>Melhorar com todas as lendas, evoluir mira, movimentação, habilidades e subir de nível nas ranqueadas do PS4.</p>
 </div>
