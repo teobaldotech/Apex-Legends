@@ -13,58 +13,51 @@
     max-width: 900px;
     line-height: 1.6;
   }
-  h1, h2 {
+  h1, h2, h3 {
     color: #ff4500;
   }
   ul {
     margin-bottom: 20px;
   }
-  .day {
+  .day, .tips {
     border-left: 5px solid #ff4500;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
     background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
   }
-  .day h2 {
+  .day h2, .tips h3 {
     margin-top: 0;
   }
 
   /* Cores + gradientes por dia */
   .monday { 
-    border-color: #ff4500; 
-    box-shadow: 0 0 15px #ff4500aa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #331a00);
+    border-color: #ff4500; box-shadow: 0 0 15px #ff4500aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #331a00);
   } 
   .tuesday { 
-    border-color: #ffaa00; 
-    box-shadow: 0 0 15px #ffaa00aa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332200);
+    border-color: #ffaa00; box-shadow: 0 0 15px #ffaa00aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332200);
   }
   .wednesday { 
-    border-color: #00bfff; 
-    box-shadow: 0 0 15px #00bfffaa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #001933);
+    border-color: #00bfff; box-shadow: 0 0 15px #00bfffaa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #001933);
   }
   .thursday { 
-    border-color: #9932cc; 
-    box-shadow: 0 0 15px #9932ccaa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #220033);
+    border-color: #9932cc; box-shadow: 0 0 15px #9932ccaa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #220033);
   }
   .friday { 
-    border-color: #ff0000; 
-    box-shadow: 0 0 15px #ff0000aa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #330000);
+    border-color: #ff0000; box-shadow: 0 0 15px #ff0000aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #330000);
   }
   .saturday { 
-    border-color: #32cd32; 
-    box-shadow: 0 0 15px #32cd32aa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #003300);
+    border-color: #32cd32; box-shadow: 0 0 15px #32cd32aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #003300);
   }
   .sunday { 
-    border-color: #ffa500; 
-    box-shadow: 0 0 15px #ffa500aa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332b00);
+    border-color: #ffa500; box-shadow: 0 0 15px #ffa500aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332b00);
+  }
+
+  /* Dicas de evolução */
+  .tips { 
+    border-color: #ff69b4; 
+    box-shadow: 0 0 15px #ff69b4aa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #330022);
   }
 
   nav {
@@ -90,21 +83,11 @@
     font-size: 0.9em;
     color: #aaa;
   }
-  /* Versão mobile */
   @media (max-width: 600px) {
-    body {
-      padding: 10px;
-    }
-    h1 {
-      font-size: 1.5em;
-      text-align: center;
-    }
-    h2 {
-      font-size: 1.2em;
-    }
-    nav {
-      font-size: 0.9em;
-    }
+    body { padding: 10px; }
+    h1 { font-size: 1.5em; text-align: center; }
+    h2, h3 { font-size: 1.2em; }
+    nav { font-size: 0.9em; }
   }
 </style>
 </head>
@@ -120,7 +103,8 @@
   <a href="#quinta">📺 Quinta</a> |
   <a href="#sexta">🔥 Sexta</a> |
   <a href="#sabado">🚀 Sábado</a> |
-  <a href="#domingo">🎮 Domingo</a>
+  <a href="#domingo">🎮 Domingo</a> |
+  <a href="#dicas">💡 Dicas</a>
 </nav>
 
 <div class="day monday" id="segunda">
@@ -188,9 +172,12 @@
   </ul>
 </div>
 
-<footer>
-  <p>Boa sorte e bons jogos! 🎮🔥</p>
-</footer>
-
-</body>
-</html>
+<div class="tips" id="dicas">
+  <h3>💡 Dicas de Evolução</h3>
+  <ul>
+    <li>🎯 <strong>Mira e combate:</strong> Treine diariamente, foque em headshots, controle de spray e armas versáteis (R-301, Flatline, Wingman).</li>
+    <li>⚡ <strong>Habilidades:</strong> Domine 3 lendas por semana, pratique combos de habilidades e use ultimate estrategicamente.</li>
+    <li>🛡️ <strong>Equipe:</strong> Comunicação com pings, proteção de aliados, uso de lendas suporte e posicionamento seguro.</li>
+    <li>🚀 <strong>Rotação:</strong> Antecipe zonas, pegue pontos altos e pratique posicionamento no final das partidas.</li>
+    <li>📺 <strong>Análise:</strong> Revise suas partidas, estude pros e aprenda padrões de movimentação e cobertura.</li>
+    <li>🎮 <strong>Diversão:</strong> Experimente armas/lendas novas, teste estratégias e aprenda com
