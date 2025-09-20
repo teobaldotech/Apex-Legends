@@ -9,7 +9,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1e1e1e;
     color: #f0f0f0;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 900px;
     line-height: 1.6;
   }
   h1, h2 {
@@ -19,20 +20,91 @@
     margin-bottom: 20px;
   }
   .day {
-    background-color: #2c2c2c;
+    border-left: 5px solid #ff4500;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 0 10px #ff4500aa;
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
   }
   .day h2 {
     margin-top: 0;
+  }
+
+  /* Cores + gradientes por dia */
+  .monday { 
+    border-color: #ff4500; 
+    box-shadow: 0 0 15px #ff4500aa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #331a00);
+  } 
+  .tuesday { 
+    border-color: #ffaa00; 
+    box-shadow: 0 0 15px #ffaa00aa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332200);
+  }
+  .wednesday { 
+    border-color: #00bfff; 
+    box-shadow: 0 0 15px #00bfffaa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #001933);
+  }
+  .thursday { 
+    border-color: #9932cc; 
+    box-shadow: 0 0 15px #9932ccaa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #220033);
+  }
+  .friday { 
+    border-color: #ff0000; 
+    box-shadow: 0 0 15px #ff0000aa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #330000);
+  }
+  .saturday { 
+    border-color: #32cd32; 
+    box-shadow: 0 0 15px #32cd32aa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #003300);
+  }
+  .sunday { 
+    border-color: #ffa500; 
+    box-shadow: 0 0 15px #ffa500aa; 
+    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332b00);
+  }
+
+  nav {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  nav a {
+    color: #ffa500;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .highlight {
+    color: #ffa500;
+    font-weight: bold;
   }
   footer {
     margin-top: 40px;
     text-align: center;
     font-size: 0.9em;
     color: #aaa;
+  }
+  /* Versão mobile */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+    nav {
+      font-size: 0.9em;
+    }
   }
 </style>
 </head>
@@ -41,39 +113,49 @@
 <h1>Plano de Treino Semanal Apex Legends</h1>
 <p><strong>Objetivo:</strong> Melhorar com todas as lendas, focando em habilidades, movimentação, mira e jogo em equipe, para subir de nível no PS4 (Ouro 2).</p>
 
-<div class="day">
-  <h2>Segunda: Mecânica de mira e movimentação (30 min)</h2>
+<nav>
+  <a href="#segunda">🎯 Segunda</a> |
+  <a href="#terca">⚡ Terça</a> |
+  <a href="#quarta">🛡️ Quarta</a> |
+  <a href="#quinta">📺 Quinta</a> |
+  <a href="#sexta">🔥 Sexta</a> |
+  <a href="#sabado">🚀 Sábado</a> |
+  <a href="#domingo">🎮 Domingo</a>
+</nav>
+
+<div class="day monday" id="segunda">
+  <h2>🎯 Segunda: Mecânica de mira e movimentação (<span class="highlight">30 min</span>)</h2>
   <ul>
     <li>Campo de tiro:</li>
     <ul>
-      <li>10 min treino de mira com R-301 e Flatline (mira em alvos estáticos e em movimento)</li>
-      <li>10 min praticar movimentação: deslizes, pulos, bunny hop e corrida em zigue-zague</li>
-      <li>10 min treinar combate corpo a corpo com Peacekeeper ou EVA-8</li>
+      <li><span class="highlight">10 min</span> treino de mira com <span class="highlight">R-301</span> e Flatline (alvos estáticos e em movimento)</li>
+      <li><span class="highlight">10 min</span> praticar movimentação: deslizes, pulos, bunny hop e corrida em zigue-zague</li>
+      <li><span class="highlight">10 min</span> treinar combate corpo a corpo com Peacekeeper ou EVA-8</li>
     </ul>
   </ul>
 </div>
 
-<div class="day">
-  <h2>Terça: Habilidades táticas + ultimate (30 min)</h2>
+<div class="day tuesday" id="terca">
+  <h2>⚡ Terça: Habilidades táticas + ultimate (<span class="highlight">30 min</span>)</h2>
   <ul>
-    <li>Escolha 3 lendas diferentes</li>
+    <li>Escolha <span class="highlight">3 lendas diferentes</span></li>
     <li>Pratique usar as habilidades táticas no campo de tiro e em partidas públicas</li>
     <li>Treine a ultimate: quando usar para atacar, defender, rotacionar</li>
   </ul>
 </div>
 
-<div class="day">
-  <h2>Quarta: Jogo em equipe e comunicação</h2>
+<div class="day wednesday" id="quarta">
+  <h2>🛡️ Quarta: Jogo em equipe e comunicação</h2>
   <ul>
     <li>Jogue squads ou duplas</li>
     <li>Foque em usar pings e comunicação sem voz</li>
     <li>Pratique rotacionar junto, proteger aliados e reviver</li>
-    <li>Use lendas de suporte (Lifeline, Newcastle) para melhorar posicionamento e cuidado com o time</li>
+    <li>Use lendas de suporte (<span class="highlight">Lifeline, Newcastle</span>) para melhorar posicionamento e cuidado com o time</li>
   </ul>
 </div>
 
-<div class="day">
-  <h2>Quinta: Análise de partidas e vídeo</h2>
+<div class="day thursday" id="quinta">
+  <h2>📺 Quinta: Análise de partidas e vídeo</h2>
   <ul>
     <li>Assista vídeo de pro player com a lenda que está focando</li>
     <li>Entenda posicionamento, uso das habilidades e movimentação</li>
@@ -81,25 +163,25 @@
   </ul>
 </div>
 
-<div class="day">
-  <h2>Sexta: Treino de combates e decisivos</h2>
+<div class="day friday" id="sexta">
+  <h2>🔥 Sexta: Treino de combates e decisões</h2>
   <ul>
     <li>Jogue partidas ranqueadas focando em decisões: quando lutar e quando recuar</li>
-    <li>Tente pelo menos 2 jogos com lendas ofensivas (Wraith, Octane) e 2 com defensivas ou suporte</li>
+    <li>Tente pelo menos <span class="highlight">2 jogos</span> com lendas ofensivas (Wraith, Octane) e <span class="highlight">2</span> com defensivas ou suporte</li>
   </ul>
 </div>
 
-<div class="day">
-  <h2>Sábado: Rotação e controle de mapa</h2>
+<div class="day saturday" id="sabado">
+  <h2>🚀 Sábado: Rotação e controle de mapa</h2>
   <ul>
     <li>Pratique rotacionar cedo para zona segura</li>
-    <li>Use lendas com mobilidade (Pathfinder, Valkyrie) para pegar posições altas</li>
+    <li>Use lendas com mobilidade (<span class="highlight">Pathfinder, Valkyrie</span>) para pegar posições altas</li>
     <li>Treine posicionamento em final de partidas</li>
   </ul>
 </div>
 
-<div class="day">
-  <h2>Domingo: Dia livre / diversão</h2>
+<div class="day sunday" id="domingo">
+  <h2>🎮 Domingo: Dia livre / diversão</h2>
   <ul>
     <li>Jogue o que quiser, teste novas lendas e armas</li>
     <li>Aproveite para relaxar e aplicar o que aprendeu na semana</li>
