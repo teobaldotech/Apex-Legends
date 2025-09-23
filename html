@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Plano de Treino Apex Legends - Todas as Lendas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plano de Treino Gamer Interativo</title>
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,88 +13,58 @@
     max-width: 900px;
     line-height: 1.6;
   }
-  h1, h2, h3 {
-    color: #ff4500;
-  }
-  ul {
-    margin-bottom: 20px;
-  }
+  h1, h2, h3 { color: #00ffcc; }
+  ul { margin-bottom: 20px; padding-left: 20px; }
   .day, .tips {
-    border-left: 5px solid #ff4500;
+    border-left: 5px solid #00ffcc;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
     background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+    box-shadow: 0 0 15px #00ffccaa;
+    position: relative;
   }
-  .day h2, .tips h3 {
-    margin-top: 0;
-  }
-
-  /* Cores + gradientes por dia */
-  .monday { 
-    border-color: #ff4500; box-shadow: 0 0 15px #ff4500aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #331a00);
-  } 
-  .tuesday { 
-    border-color: #ffaa00; box-shadow: 0 0 15px #ffaa00aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332200);
-  }
-  .wednesday { 
-    border-color: #00bfff; box-shadow: 0 0 15px #00bfffaa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #001933);
-  }
-  .thursday { 
-    border-color: #9932cc; box-shadow: 0 0 15px #9932ccaa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #220033);
-  }
-  .friday { 
-    border-color: #ff0000; box-shadow: 0 0 15px #ff0000aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #330000);
-  }
-  .saturday { 
-    border-color: #32cd32; box-shadow: 0 0 15px #32cd32aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #003300);
-  }
-  .sunday { 
-    border-color: #ffa500; box-shadow: 0 0 15px #ffa500aa; background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #332b00);
-  }
-
-  /* Dicas de evolução */
-  .tips { 
-    border-color: #ff69b4; 
-    box-shadow: 0 0 15px #ff69b4aa; 
-    background: linear-gradient(145deg, #2c2c2c, #1a1a1a, #330022);
-  }
-
-  nav {
-    text-align: center;
-    margin-bottom: 25px;
-  }
+  .day h2, .tips h3 { margin-top: 0; }
+  nav { text-align: center; margin-bottom: 25px; }
   nav a {
-    color: #ffa500;
+    color: #00ffcc; text-decoration: none; margin: 0 8px; font-weight: bold;
+  }
+  nav a:hover { text-decoration: underline; }
+  .highlight { color: #ffa500; font-weight: bold; }
+  footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #aaa; }
+  @media (max-width: 600px) { body { padding: 10px; } h1 { font-size: 1.5em; text-align: center; } h2,h3 { font-size: 1.2em; } nav { font-size: 0.9em; } }
+
+  /* GIFs / ícones ao lado do título */
+  .day img { width: 35px; vertical-align: middle; margin-right: 8px; }
+
+  /* Barra de progresso */
+  .progress-container {
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 10px;
+  }
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #00ffcc;
+    transition: width 0.5s;
+  }
+
+  /* Links úteis */
+  .links a {
+    color: #ff69b4;
     text-decoration: none;
-    margin: 0 8px;
     font-weight: bold;
   }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  .highlight {
-    color: #ffa500;
-    font-weight: bold;
-  }
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #aaa;
-  }
-  @media (max-width: 600px) {
-    body { padding: 10px; }
-    h1 { font-size: 1.5em; text-align: center; }
-    h2, h3 { font-size: 1.2em; }
-    nav { font-size: 0.9em; }
-  }
+  .links a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<h1>Plano de Treino Semanal Apex Legends</h1>
-<p><strong>Objetivo:</strong> Melhorar com todas as lendas, focando em habilidades, movimentação, mira e jogo em equipe, para subir de nível no PS4 (Ouro 2).</p>
+<h1>🎮 Plano de Treino Gamer Interativo</h1>
+<p><strong>Objetivo:</strong> Evoluir em mira, reflexos, habilidades, estratégia e trabalho em equipe.</p>
 
 <nav>
   <a href="#segunda">🎯 Segunda</a> |
@@ -107,77 +77,112 @@
   <a href="#dicas">💡 Dicas</a>
 </nav>
 
+<!-- Segunda -->
 <div class="day monday" id="segunda">
-  <h2>🎯 Segunda: Mecânica de mira e movimentação (<span class="highlight">30 min</span>)</h2>
+  <h2><img src="https://i.gifer.com/origin/0b/0b6f27a0ef1d8f2e3df26b8d590a7983_w200.gif" alt="Mira">Segunda: Mira e Reflexos</h2>
   <ul>
-    <li>Campo de tiro:</li>
-    <ul>
-      <li><span class="highlight">10 min</span> treino de mira com <span class="highlight">R-301</span> e Flatline (alvos estáticos e em movimento)</li>
-      <li><span class="highlight">10 min</span> praticar movimentação: deslizes, pulos, bunny hop e corrida em zigue-zague</li>
-      <li><span class="highlight">10 min</span> treinar combate corpo a corpo com Peacekeeper ou EVA-8</li>
-    </ul>
+    <li>Treino em simuladores: <span class="links"><a href="https://aimlab.gg/" target="_blank">Aim Lab</a>, <a href="https://kovaak.com/" target="_blank">Kovaak's</a></span></li>
+    <li>Headshots: 10 min | Alvos em movimento: 10 min | Spray control: 10 min</li>
+    <li>Partidas reais focando precisão e posicionamento</li>
   </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-segunda"></div></div>
 </div>
 
+<!-- Terça -->
 <div class="day tuesday" id="terca">
-  <h2>⚡ Terça: Habilidades táticas + ultimate (<span class="highlight">30 min</span>)</h2>
+  <h2><img src="https://i.gifer.com/origin/86/8629f157f6d168b1b37c7479bfa7b6fa_w200.gif" alt="Habilidades">Terça: Habilidades do Personagem</h2>
   <ul>
-    <li>Escolha <span class="highlight">3 lendas diferentes</span></li>
-    <li>Pratique usar as habilidades táticas no campo de tiro e em partidas públicas</li>
-    <li>Treine a ultimate: quando usar para atacar, defender, rotacionar</li>
+    <li>Treinar habilidades em bots ou modo treino</li>
+    <li>Simular combates usando ultimates e habilidades defensivas</li>
+    <li>Testar combos de habilidades com aliados</li>
   </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-terca"></div></div>
 </div>
 
+<!-- Quarta -->
 <div class="day wednesday" id="quarta">
-  <h2>🛡️ Quarta: Jogo em equipe e comunicação</h2>
+  <h2><img src="https://i.gifer.com/origin/23/23c4a837b0a243f8ee66b1b57ee3a3ff_w200.gif" alt="Estratégia">Quarta: Estratégia e Posicionamento</h2>
   <ul>
-    <li>Jogue squads ou duplas</li>
-    <li>Foque em usar pings e comunicação sem voz</li>
-    <li>Pratique rotacionar junto, proteger aliados e reviver</li>
-    <li>Use lendas de suporte (<span class="highlight">Lifeline, Newcastle</span>) para melhorar posicionamento e cuidado com o time</li>
+    <li>Treino de rotação e pontos estratégicos</li>
+    <li>Partidas priorizando decisões inteligentes</li>
+    <li>Revisar mapas e loot</li>
   </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-quarta"></div></div>
 </div>
 
+<!-- Quinta -->
 <div class="day thursday" id="quinta">
-  <h2>📺 Quinta: Análise de partidas e vídeo</h2>
+  <h2><img src="https://i.gifer.com/origin/aa/aa7d20d9a1f1f0dba634e33f8e9a1181_w200.gif" alt="Equipe">Quinta: Comunicação e Equipe</h2>
   <ul>
-    <li>Assista vídeo de pro player com a lenda que está focando</li>
-    <li>Entenda posicionamento, uso das habilidades e movimentação</li>
-    <li>Revise sua última gameplay e anote erros para corrigir</li>
+    <li>Jogar em squads/duplas focando comunicação</li>
+    <li>Treinar reviver aliados e proteger posições-chave</li>
+    <li>Combinar estratégias pré-jogo</li>
   </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-quinta"></div></div>
 </div>
 
+<!-- Sexta -->
 <div class="day friday" id="sexta">
-  <h2>🔥 Sexta: Treino de combates e decisões</h2>
+  <h2><img src="https://i.gifer.com/origin/1b/1b4e2f2761e1b7df1b80e3f4d03e08eb_w200.gif" alt="Análise">Sexta: Análise de Gameplay</h2>
   <ul>
-    <li>Jogue partidas ranqueadas focando em decisões: quando lutar e quando recuar</li>
-    <li>Tente pelo menos <span class="highlight">2 jogos</span> com lendas ofensivas (Wraith, Octane) e <span class="highlight">2</span> com defensivas ou suporte</li>
+    <li>Assistir replays das próprias partidas</li>
+    <li>Anotar erros em mira, posicionamento e decisões</li>
+    <li>Estudar pros jogando personagens similares</li>
   </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-sexta"></div></div>
 </div>
 
+<!-- Sábado -->
 <div class="day saturday" id="sabado">
-  <h2>🚀 Sábado: Rotação e controle de mapa</h2>
+  <h2><img src="https://i.gifer.com/origin/4e/4e6eab0532a7ab2f9c84f1f0d2644c1f_w200.gif" alt="Velocidade">Sábado: Velocidade e Resistência</h2>
   <ul>
-    <li>Pratique rotacionar cedo para zona segura</li>
-    <li>Use lendas com mobilidade (<span class="highlight">Pathfinder, Valkyrie</span>) para pegar posições altas</li>
-    <li>Treine posicionamento em final de partidas</li>
+    <li>Treinos de reação em simuladores</li>
+    <li>Partidas rápidas/deathmatch</li>
+    <li>Alongamento e exercícios para evitar fadiga</li>
   </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-sabado"></div></div>
 </div>
 
+<!-- Domingo -->
 <div class="day sunday" id="domingo">
-  <h2>🎮 Domingo: Dia livre / diversão</h2>
+  <h2><img src="https://i.gifer.com/origin/7c/7c8dfbbf5a7f5e8c46f6b7b86f26452b_w200.gif" alt="Diversão">Domingo: Diversão e Experimentação</h2>
   <ul>
-    <li>Jogue o que quiser, teste novas lendas e armas</li>
-    <li>Aproveite para relaxar e aplicar o que aprendeu na semana</li>
+    <li>Testar novos personagens, armas e modos</li>
+    <li>Experimentar estratégias diferentes</li>
+    <li>Partidas relaxadas sem pressão</li>
+  </ul>
+  <div class="progress-container"><div class="progress-bar" id="progress-domingo"></div></div>
+</div>
+
+<!-- Dicas Extras -->
+<div class="tips" id="dicas">
+  <h3>💡 Dicas Extras</h3>
+  <ul>
+    <li>Postura correta e ergonomia</li>
+    <li>Pausas curtas a cada 30-45 min</li>
+    <li>Hidrate-se e faça alongamentos</li>
+    <li>Diário de treino: registrar progresso e erros</li>
+    <li>Foco na qualidade do treino, não só na quantidade de horas</li>
   </ul>
 </div>
 
-<div class="tips" id="dicas">
-  <h3>💡 Dicas de Evolução</h3>
-  <ul>
-    <li>🎯 <strong>Mira e combate:</strong> Treine diariamente, foque em headshots, controle de spray e armas versáteis (R-301, Flatline, Wingman).</li>
-    <li>⚡ <strong>Habilidades:</strong> Domine 3 lendas por semana, pratique combos de habilidades e use ultimate estrategicamente.</li>
-    <li>🛡️ <strong>Equipe:</strong> Comunicação com pings, proteção de aliados, uso de lendas suporte e posicionamento seguro.</li>
-    <li>🚀 <strong>Rotação:</strong> Antecipe zonas, pegue pontos altos e pratique posicionamento no final das partidas.</li>
-    <li>📺 <strong>Análise:</strong> Revise suas partidas, estude pros e aprenda padrões de movimentação e cobertura.</li>
-    <li>🎮 <strong>Diversão:</strong> Experimente armas/lendas novas, teste estratégias e aprenda com
+<footer>
+  &copy; 2025 Plano de Treino Gamer | Desenvolvido por <strong>TEOBALDO MACHADO BATISTA RIBEIRO</strong>
+</footer>
+
+<script>
+  // Simula barra de progresso ao clicar em cada dia
+  const days = ['segunda','terca','quarta','quinta','sexta','sabado','domingo'];
+  days.forEach(day => {
+    const container = document.getElementById('progress-' + day);
+    container.parentElement.addEventListener('click', () => {
+      let width = container.style.width.replace('%','') || 0;
+      width = parseInt(width) + 20;
+      if(width > 100) width = 0;
+      container.style.width = width + '%';
+    });
+  });
+</script>
+
+</body>
+</html>
